@@ -46,9 +46,6 @@ class Player():
     
     def vt_default(self):
         self.change_y = 0.1
-    
-    def start_fall(self):
-        self.change_y = -0.1
 
     def check_vertical_platform_collsion(self):
         platform_index = check_collision(platform_list, self)
