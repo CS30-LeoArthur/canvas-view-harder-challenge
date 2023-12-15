@@ -55,7 +55,7 @@ class Player():
                 self.vt_default()
                 self.y = platform_list[platform_index].y - self.height
             elif self.change_y < 0:
-                self.start_fall()
+                self.vt_default()
                 self.y = platform_list[platform_index].y + platform_list[platform_index].height
     
     def check_horizontal_platform_collision(self):
