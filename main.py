@@ -72,13 +72,13 @@ class Player():
         elif self.x + self.width > WORLD_WIDTH:
             self.x = WORLD_WIDTH - self.width
 
-    def view_vertical_edge_collision(self):
+    def view_horizontal_edge_collision(self):
         if self.view[0] < 0:
             self.view[0] = 0
         elif self.view[0] > WORLD_WIDTH - SCREEN_WIDTH:
             self.view[0] = WORLD_WIDTH - SCREEN_WIDTH
     
-    def view_horizontal_edge_collision(self):
+    def view_vertical_edge_collision(self):
         if self.view[1] > GROUND_HEIGHT - 500:
             self.view[1] = GROUND_HEIGHT - 500
         
